@@ -91,9 +91,10 @@ a:hover {color: #f00;}
 .table tr td .pt:hover {background: #ba2929;color: #fff;}
 .table tr td .kf {border: 1px dashed #323edb;color: #323edb;}
 .table tr td .kf:hover {background: #323edb;color: #fff;}
-.table tr td i {font-style: inherit;color: #06f;padding:5px 10px;border: 1px dashed #06f;}
+.table tr td i {font-style: inherit;color: #06f;padding:5px 15px;border: 1px dashed #06f;}
 .table tr td .zd {border: 1px dashed #f00;color: #f00;}
 .none {display: none;}
 
 /*底部*/
+
 .footer {background: #eee;color: #666;text-align: center;padding:30px;border-top: 1px solid #ccc;margin-top: 10px;line-height: 28px;}

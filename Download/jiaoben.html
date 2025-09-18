@@ -1,62 +1,197 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>脚本中心</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-            background-image: url('https://example.com/background.jpg');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
+        .article-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
         }
-        .intro {
-            margin: 20px auto;
-            width: fit-content;
-            max-width: 80%;
-            line-height: 1.6;
-            background-color: rgba(0,0,0,0.7);
-            padding: 15px;
-            border-radius: 5px;
+        .article-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        table {
-            margin: 20px auto;
-            border-collapse: collapse;
-            width: auto;
-            background-color: rgba(0,0,0,0.7);
+        .article-title {
+            cursor: pointer;
         }
-        td {
-            border: 1px solid white;
-            padding: 12px;
-            text-align: left;
-        }
-        a {
-            color: #4da6ff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
+        .article-title:hover {
             text-decoration: underline;
-            color: #66b3ff;
+            color: #3b82f6;
         }
     </style>
 </head>
-<body>
-    <div class="intro">
-        <p>脚本实现游戏更多玩法</p>
-        <p>遇到喜欢的想要的就联系站长获取吧</p>
-    </div>
-    
-    <table>
-        <tr><td><a href="https://docs.qq.com/doc/DR0RoaVBkT0tsc1hk" target="_blank">GM【PM】命令</a></td></tr>
-		<tr><td><a href="https://docs.qq.com/doc/DR3NRVnNGRnlZdW55" target="_blank">XP恢复加速100%脚本</a></td></tr>
-        <tr><td><a href="https://docs.qq.com/doc/DR3VPZEJrc2dWWUNv" target="_blank">脚本定时刷怪</a></td></tr>
-        <tr><td><a href="https://docs.qq.com/doc/DR0ZSS295dUVCd2tK" target="_blank">VIP不同入包脚本</a></td></tr>
-        <tr><td><a href="https://example.com/5" target="_blank">脚本正在编写更新中...</a></td></tr>
-    </table>
+<body class="bg-gray-50 font-sans">
+    <header class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-6 shadow-md">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold">脚本精选文章</h1>
+            <div class="relative w-64">
+                <input type="text" placeholder="搜索文章..." 
+                       class="w-full pl-10 pr-4 py-2 rounded-full bg-white bg-opacity-20 
+                              focus:outline-none focus:bg-opacity-30 focus:ring-2 focus:ring-white">
+                <svg class="absolute left-3 top-2.5 h-5 w-5 text-white opacity-70" 
+                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- 文章卡片1 -->
+            <div class="article-card bg-white rounded-lg p-4 shadow-sm">
+                <span class="inline-block bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full mb-2">指令</span>
+                <h3 class="article-title text-lg font-semibold mb-1" onclick="window.open('https://docs.qq.com/doc/DR0RoaVBkT0tsc1hk', '_blank')">GM【PM】命令</h3>
+                <p class="text-sm text-gray-600">通用命令是 /awarditem 710086 物品代码</p>
+                <div class="mt-2 text-xs text-gray-500">6月22日</div>
+            </div>
+			<!-- 文章卡片2 -->
+            <div class="article-card bg-white rounded-lg p-4 shadow-sm">
+                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mb-2">脚本</span>
+                <h3 class="article-title text-lg font-semibold mb-1" onclick="window.open('https://docs.qq.com/doc/DR3NRVnNGRnlZdW55', '_blank')">XP恢复加速100%脚本</h3>
+                <p class="text-sm text-gray-600">恭喜阁下获得XP回复速度增加100％，状态将持续10分钟。</p>
+                <div class="mt-2 text-xs text-gray-500">6月5日</div>
+            </div>
+
+            <!-- 文章卡片3 -->
+            <div class="article-card bg-white rounded-lg p-4 shadow-sm">
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mb-2">脚本</span>
+                <h3 class="article-title text-lg font-semibold mb-1" onclick="window.open('https://docs.qq.com/doc/DR3VPZEJrc2dWWUNv', '_blank')">脚本定时刷怪</h3>
+                <p class="text-sm text-gray-600">8点到了沉睡一晚的鹿角兽开始上班了</p>
+                <div class="mt-2 text-xs text-gray-500">6月12日</div>
+            </div>
+
+            <!-- 文章卡片4 -->
+            <div class="article-card bg-white rounded-lg p-4 shadow-sm">
+                <span class="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full mb-2">脚本</span>
+                <h3 class="article-title text-lg font-semibold mb-1" onclick="window.open('https://docs.qq.com/doc/DR0ZSS295dUVCd2tK', '_blank')">VIP不同入包脚本</h3>
+                <p class="text-sm text-gray-600">击杀了一直BOSS获得5魔石，你还在等什么赶快加入吧！</p>
+                <div class="mt-2 text-xs text-gray-500">6月18日</div>
+            </div>
+
+            <!-- 文章卡片5 -->
+            <div class="article-card bg-white rounded-lg p-4 shadow-sm">
+                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mb-2">脚本</span>
+                <h3 class="article-title text-lg font-semibold mb-1" onclick="window.open('https://docs.qq.com/doc/DR0tXZW1MRm16bnJD', '_blank')">6职业领取一套永不磨损装备</h3>
+                <p class="text-sm text-gray-600">1个灵魂王,便可以兑换一套永不磨损的装备</p>
+                <div class="mt-2 text-xs text-gray-500">6月8日</div>
+            </div>
+
+            <!-- 文章卡片6 -->
+            <div class="article-card bg-white rounded-lg p-4 shadow-sm">
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mb-2">脚本</span>
+                <h3 class="article-title text-lg font-semibold mb-1" onclick="window.open('https://docs.qq.com/doc/DR2FmS25jREZIdEhS', '_blank')">一键学本职业技能</h3>
+                <p class="text-sm text-gray-600">我要学习所有技能</p>
+                <div class="mt-2 text-xs text-gray-500">6月15日</div>
+            </div>
+			<!-- 文章卡片1 -->
+            <div class="article-card bg-white rounded-lg p-4 shadow-sm">
+                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mb-2">脚本</span>
+                <h3 class="article-title text-lg font-semibold mb-1" onclick="window.open('https://docs.qq.com/doc/DR2dIaXJzSWVyTUth', '_blank')">最完美的一键回收道具[增加女神材料的回收]</h3>
+                <p class="text-sm text-gray-600">增加女神材料的回收</p>
+                <div class="mt-2 text-xs text-gray-500">6月5日</div>
+            </div>
+
+            <!-- 文章卡片2 -->
+            <div class="article-card bg-white rounded-lg p-4 shadow-sm">
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mb-2">脚本</span>
+                <h3 class="article-title text-lg font-semibold mb-1" onclick="window.open('https://share.feijipan.com/s/mYPhXs0I', '_blank')">魔石雨</h3>
+                <p class="text-sm text-gray-600">神谕指示：漂浮于云端的上古圣域－－星云浮岛</p>
+                <div class="mt-2 text-xs text-gray-500">6月12日</div>
+            </div>
+
+            <!-- 文章卡片3 -->
+            <div class="article-card bg-white rounded-lg p-4 shadow-sm">
+                <span class="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full mb-2">脚本</span>
+                <h3 class="article-title text-lg font-semibold mb-1" onclick="window.open('https://docs.qq.com/doc/DR2VQTnFpSmpST3Vk', '_blank')">vip每小时领工资</h3>
+                <p class="text-sm text-gray-600">每小时都可以领取大量魔石</p>
+                <div class="mt-2 text-xs text-gray-500">6月18日</div>
+            </div>
+
+            <!-- 文章卡片4 -->
+            <div class="article-card bg-white rounded-lg p-4 shadow-sm">
+                <span class="inline-block bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full mb-2">脚本</span>
+                <h3 class="article-title text-lg font-semibold mb-1" onclick="window.open('https://docs.qq.com/doc/DR1ptcXFEUFpVb21C', '_blank')">BOSS精准定位脚本</h3>
+                <p class="text-sm text-gray-600">BOSS精准定位</p>
+                <div class="mt-2 text-xs text-gray-500">6月22日</div>
+            </div>
+
+            <!-- 文章卡片5 -->
+            <div class="article-card bg-white rounded-lg p-4 shadow-sm">
+                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mb-2">脚本</span>
+                <h3 class="article-title text-lg font-semibold mb-1" onclick="window.open('https://docs.qq.com/doc/DR0pJbFBQaFRvT2hO', '_blank')">集体大乱斗</h3>
+                <p class="text-sm text-gray-600">召唤全服玩家进入集体大乱斗地图</p>
+                <div class="mt-2 text-xs text-gray-500">6月8日</div>
+            </div>
+
+            <!-- 文章卡片6 -->
+            <div class="article-card bg-white rounded-lg p-4 shadow-sm">
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mb-2">脚本</span>
+                <h3 class="article-title text-lg font-semibold mb-1" onclick="window.open('https://docs.qq.com/doc/DR2pIV1hKcFpuUW1i', '_blank')">回收星水</h3>
+                <p class="text-sm text-gray-600">回收价格是10个星水=100W赠魔石</p>
+                <div class="mt-2 text-xs text-gray-500">6月15日</div>
+            </div>
+			<!-- 文章卡片1 -->
+            <div class="article-card bg-white rounded-lg p-4 shadow-sm">
+                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mb-2">脚本</span>
+                <h3 class="article-title text-lg font-semibold mb-1" onclick="window.open('https://docs.qq.com/doc/DR21SUm9DZVJuUnhu', '_blank')">四海剑圣</h3>
+                <p class="text-sm text-gray-600">四海圣剑-需要钥匙才能开启</p>
+                <div class="mt-2 text-xs text-gray-500">6月5日</div>
+            </div>
+
+            <!-- 文章卡片2 -->
+            <div class="article-card bg-white rounded-lg p-4 shadow-sm">
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mb-2">脚本</span>
+                <h3 class="article-title text-lg font-semibold mb-1" onclick="window.open('https://docs.qq.com/doc/DR1dxdXVIeGdWcGx1', '_blank')">排行</h3>
+                <p class="text-sm text-gray-600">累计三天领取奖励</p>
+                <div class="mt-2 text-xs text-gray-500">6月12日</div>
+            </div>
+
+            <!-- 文章卡片3 -->
+            <div class="article-card bg-white rounded-lg p-4 shadow-sm">
+                <span class="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full mb-2">脚本</span>
+                <h3 class="article-title text-lg font-semibold mb-1" onclick="window.open('https://share.feijipan.com/s/CtPhVbqy', '_blank')">打年使者</h3>
+                <p class="text-sm text-gray-600">克拉泪钻！助你早日能霸主之位！</p>
+                <div class="mt-2 text-xs text-gray-500">6月18日</div>
+            </div>
+
+            <!-- 文章卡片4 -->
+            <div class="article-card bg-white rounded-lg p-4 shadow-sm">
+                <span class="inline-block bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full mb-2">脚本</span>
+                <h3 class="article-title text-lg font-semibold mb-1" onclick="window.open('https://docs.qq.com/doc/DR3ZSRkNZdUZvWE5z', '_blank')">宝宝冲星奖励</h3>
+                <p class="text-sm text-gray-600">恭喜你第一个领取冲星奖励</p>
+                <div class="mt-2 text-xs text-gray-500">6月22日</div>
+            </div>
+
+            <!-- 文章卡片5 -->
+            <div class="article-card bg-white rounded-lg p-4 shadow-sm">
+                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mb-2">副本</span>
+                <h3 class="article-title text-lg font-semibold mb-1" onclick="window.open('https://share.feijipan.com/s/FgPhWcMz', '_blank')">花语平原</h3>
+                <p class="text-sm text-gray-600">花语平原</p>
+                <div class="mt-2 text-xs text-gray-500">6月8日</div>
+            </div>
+
+            <!-- 文章卡片6 -->
+            <div class="article-card bg-white rounded-lg p-4 shadow-sm">
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mb-2">脚本</span>
+                <h3 class="article-title text-lg font-semibold mb-1" onclick="window.open('https://docs.qq.com/doc/DR0ZNdUJLeFVGRkxM', '_blank')">去冰封需要280站+1颗灵魂晶石+58点魔石</h3>
+                <p class="text-sm text-gray-600">去冰封需要280站+1颗灵魂晶石+58点魔石</p>
+                <div class="mt-2 text-xs text-gray-500">6月15日</div>
+            </div>
+			
+        </div>
+    </main>
+
+    <footer class="bg-gray-100 text-gray-600 py-4 mt-8">
+        <div class="container mx-auto px-4 text-center text-sm">
+            &copy; 2015-2025新品魔域版本库[aaua.cn].<br><!-- 换行标签 -->
+			抵制不良游戏，拒绝盗版游戏。 注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。 合理安排时间，享受健康生活。
+        </div>
+    </footer>
 </body>
 </html>

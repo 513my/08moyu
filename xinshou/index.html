@@ -1,261 +1,157 @@
-﻿
+
 <!DOCTYPE html>
-<html lang="cn">
+<html lang="zh-CN">
 <head>
-    <meta name="baidu-site-verification" content="code-OZnTW8y7Sc" />
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>新手教程</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery.js"></script>
+    <style>
+        /* 全局样式 */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* 导航栏样式 */
+        nav {
+            width: 100%;
+            background-color: #2E7D32;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-link:hover {
+            background-color: #4CAF50;
+        }
+        
+        /* 内容区域（继承原有样式） */
+        .content {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+        }
+        
+        h2 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 18px;
+            margin: 0 0 10px 0;
+            text-align: center;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px dashed #ddd;
+            margin: 10px 0;
+            width: 100%;
+        }
+        
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin: 8px 0;
+        }
+        
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #4CAF50;
+        }
+        
+        /* 新增：前三项红色加粗样式 */
+        li:nth-child(-n+5) a {
+            font-weight: bold;
+            color: red;
+        }
+        
+        a {
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-<div class="main">
-        <div class="main_content">
+    <!-- 导航栏 -->
+    <nav>
+<!--         <div class="nav-container">
+            <a href="#" class="nav-link">首页</a>
+            <a href="#" class="nav-link">文档中心</a>
+            <a href="#" class="nav-link">模板下载</a>
+            <a href="#" class="nav-link">关于我们</a>
+            <a href="#" class="nav-link">联系我们</a>
+        </div> -->
+    </nav>
 
-            <div class="menu">
-
-                <div class="so">
-                    <input type="text" name="key" id="key" placeholder="请输入您要搜索的关键词">
-                    <button id="btn">搜 索</button>
-                </div>
-            </div>
-            <!-- <div class="gg" id="gg"></div> -->
-			<div class="gg" id="gg"><ul><li><a href="https://curl.qcloud.com/SV5BR2TW" target="_blank"><img src="ad/txy.png" width="1290px" height="100"></a><div class="t">白捡</div></li></ul></div>
-            <div class="tab-bor">
-                <table class="table">
-                    <tr>
-                        <th width="80px">标识</th>
-                        <th>教程标题</th>
-                        <th width="100px">在线学院</th>
-                        <th width="100px">在线学院</th>
-                    </tr>
-
-	<tr>
-    <td><i>新手教程</i></td>
-    <td style="color: red; font-weight: bold;">老端单机搭建详细视频教程</td>
-    <td><a href="xuexi/jiaocheng.html" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="xuexi/jiaocheng.html" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-                        
-	<tr>
-    <td><i>新手教程</i></td>
-    <td style="color: red; font-weight: bold;">老端打血条补丁教程</td>
-    <td><a href="https://tieba.baidu.com/p/9519106385" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="https://tieba.baidu.com/p/9519106385" class="kf" target="_blank">②号学院</a></td>
-	</tr> 
-						
-    <tr>
-    <td><i>新手教程</i></td>
-    <td style="color: red; font-weight: bold;">老端修复登录超时和闪退问题</td>
-    <td><a href="https://tieba.baidu.com/p/9488933017" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="https://tieba.baidu.com/p/9488933017" class="kf" target="_blank">②号学院</a></td>
-	</tr> 
-						
-    <tr>
-    <td><i>新手教程</i></td>
-    <td style="color: red; font-weight: bold;">老端修复卡在欢迎界面</td>
-    <td><a href="https://tieba.baidu.com/p/9488933017" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="https://www.kuaishou.com/short-video/3xrh8cydwt9re3y" class="kf" target="_blank">②号学院</a></td>
-	</tr> 
-						
-    <tr>
-    <td><i>新手教程</i></td>
-    <td style="color: red; font-weight: bold;">GM工具连接数据库教程</td>
-    <td><a href="https://tieba.baidu.com/p/9751659080" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="https://tieba.baidu.com/p/9751659080" class="kf" target="_blank">②号学院</a></td>
-	</tr> 
-	
-    <!-- <tr>
-    <td><i>新手教程</i></td>
-    <td style="color: red; font-weight: bold;">老端单机搭建详细视频教程</td>
-    <td><a href="xuexi/jiaocheng.html" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="xuexi/jiaocheng.html" class="kf" target="_blank">②号学院</a></td>
-	</tr> -->
-	
-	<tr>
-    <td><i>新手教程</i></td>
-    <td>设置人物等级默认上线70级教程</td>
-    <td><a href="https://docs.qq.com/doc/DR1dXR2NvWndYSUVK" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="https://docs.qq.com/doc/DR1dXR2NvWndYSUVK" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	<tr>
-    <td><i>新手教程</i></td>
-    <td>设置幻兽出生即为高星</td>
-    <td><a href="https://docs.qq.com/doc/DR1ZuSGZQUXdmTnpK" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="https://docs.qq.com/doc/DR1ZuSGZQUXdmTnpK" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-	<tr>
-    <td><i>新手教程</i></td>
-    <td>合BB所需副BB评分如何设定为最高只需19星XO</td>
-    <td><a href="https://docs.qq.com/doc/DR2tVYnZGQ2hEY1R0" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>BB战改法或法改战</td>
-    <td><a href="https://docs.qq.com/doc/DR2dzakJCbEthT1hX" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>修改合BB的速度（即每次加的评分）</td>
-    <td><a href="https://docs.qq.com/doc/DR0xiRkpZanJNQXFG" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>如何修改合BB不用相同属性</td>
-    <td><a href="https://docs.qq.com/doc/DR01zZWNTTGdDZHhV" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>如何修改BB合星时成功与失败的机率</td>
-    <td><a href="https://docs.qq.com/doc/DR1JrWUVtcENPdWZ2" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>修改VIP批量孵化时间</td>
-    <td><a href="https://docs.qq.com/doc/DR0RaTHBBeEV2SUNU" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>修改技能经验及等级</td>
-    <td><a href="https://docs.qq.com/doc/DR1BxVVFWaEdLS1pq" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>修改升级速度</td>
-    <td><a href="https://docs.qq.com/doc/DR2xYRkFCVnBqRWRs" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>修改等级上限突破132级</td>
-    <td><a href="https://docs.qq.com/doc/DR0t3dFB1TkxBRWFW" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>设置上线VIP等级，有3种方式</td>
-    <td><a href="https://docs.qq.com/doc/DR0tHT1VPbnVuUVVG" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>如何修改抽奖次数</td>
-    <td><a href="https://docs.qq.com/doc/DR1JrSFpSV1ZBa3pG" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>如何抽奖抽到你想要的物品</td>
-    <td><a href="https://docs.qq.com/doc/DR2tmcG9tVExncWVo" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>修改带宝宝的数目</td>
-    <td><a href="https://docs.qq.com/doc/DR0pYTk1sT2VqTE1m" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>修改宝宝仓库页数</td>
-    <td><a href="https://docs.qq.com/doc/DR3pUVnZXR0RrZnVa" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>如何修改屏幕中间GM发出的公告</td>
-    <td><a href="https://docs.qq.com/doc/DR0Zna1NxZHZmaE9x" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>怎样才能知道所有物品的ID和数据</td>
-    <td><a href="https://docs.qq.com/doc/DR1VxTUdTZ2JqTVZz" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>快速结商业方法</td>
-    <td><a href="https://docs.qq.com/doc/DR3FQVHhDSHJPdnZS" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>修改合BB速度</td>
-    <td><a href="https://docs.qq.com/doc/DR2V2bWJTYmFYcGNM" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>技能属性修改</td>
-    <td><a href="https://docs.qq.com/doc/DR3ZPcWpnc3FrZ1BY" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>幻兽合一次加的评分修改</td>
-    <td><a href="https://docs.qq.com/doc/DR05MR1dIWkhRUVVI" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <tr>
-    <td><i>新手教程</i></td>
-    <td>怎么给随机卷叠加到5000个</td>
-    <td><a href="https://docs.qq.com/doc/DR2F6ZnFBVU9BWmZS" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr>
-	
-    <!-- <tr>
-    <td><i>新手教程</i></td>
-    <td>标题</td>
-    <td><a href="###" class="pt" target="_blank">①号学院</a></td>
-    <td><a href="#" class="kf" target="_blank">②号学院</a></td>
-	</tr> -->
-	
-                </table>
-            </div>
-            <div class="footer">
-                <!-- <td><a href="https://aaua.cn" class="pt" target="_blank">[www.aaua.cn]</a></td></br> -->
-            </div>
-            <script>
-            var _hmt = _hmt || [];
-            (function() {
-              var hm = document.createElement("script");
-              hm.src = "https://hm.baidu.com/hm.js?484c3036989abdbd9a7ccea8766a64bd";
-              var s = document.getElementsByTagName("script")[0]; 
-              s.parentNode.insertBefore(hm, s);
-            })();
-            </script>
-        </div>
+    <!-- 内容区域 -->
+    <div class="content">
+        <h2>教程列表</h2>
+        <hr>
+        <ul>
+            <li><a href="xuexi/jiaocheng.html" target="_blank">老端单机搭建详细视频教程</a></li>
+            <li><a href="https://tieba.baidu.com/p/9519106385" target="_blank">老端打血条补丁教程</a></li>
+            <li><a href="https://tieba.baidu.com/p/9488933017" target="_blank">老端修复登录超时和闪退问题</a></li>
+            <li><a href="https://tieba.baidu.com/p/9488933017" target="_blank">老端修复卡在欢迎界面</a></li>
+            <li><a href="https://tieba.baidu.com/p/9751659080" target="_blank">GM工具连接数据库教程</a></li>
+            <li><a href="https://docs.qq.com/doc/DR1dXR2NvWndYSUVK" target="_blank">设置人物等级默认上线70级教程</a></li>
+            <li><a href="https://docs.qq.com/doc/DR1ZuSGZQUXdmTnpK" target="_blank">设置幻兽出生即为高星</a></li>
+            <li><a href="https://docs.qq.com/doc/DR2tVYnZGQ2hEY1R0" target="_blank">合BB所需副BB评分如何设定为最高只需19星XO</a></li>
+            <li><a href="https://docs.qq.com/doc/DR2dzakJCbEthT1hX" target="_blank">BB战改法或法改战</a></li>
+            <li><a href="https://docs.qq.com/doc/DR0xiRkpZanJNQXFG" target="_blank">修改合BB的速度（即每次加的评分）</a></li>
+            <li><a href="https://docs.qq.com/doc/DR01zZWNTTGdDZHhV" target="_blank">如何修改合BB不用相同属性</a></li>
+            <li><a href="https://docs.qq.com/doc/DR1JrWUVtcENPdWZ2" target="_blank">如何修改BB合星时成功与失败的机率</a></li>
+            <li><a href="https://docs.qq.com/doc/DR0RaTHBBeEV2SUNU" target="_blank">修改VIP批量孵化时间</a></li>
+            <li><a href="https://docs.qq.com/doc/DR1BxVVFWaEdLS1pq" target="_blank">修改技能经验及等级</a></li>
+            <li><a href="https://docs.qq.com/doc/DR2xYRkFCVnBqRWRs" target="_blank">修改升级速度</a></li>
+			<li><a href="https://docs.qq.com/doc/DR0t3dFB1TkxBRWFW" target="_blank">修改等级上限突破132级</a></li>
+			<li><a href="https://docs.qq.com/doc/DR0tHT1VPbnVuUVVG" target="_blank">设置上线VIP等级，有3种方式</a></li>
+			<li><a href="https://docs.qq.com/doc/DR1JrSFpSV1ZBa3pG" target="_blank">如何修改抽奖次数</a></li>
+			<li><a href="https://docs.qq.com/doc/DR2tmcG9tVExncWVo" target="_blank">如何抽奖抽到你想要的物品</a></li>
+			<li><a href="https://docs.qq.com/doc/DR0pYTk1sT2VqTE1m" target="_blank">修改带宝宝的数目</a></li>
+			<li><a href="https://docs.qq.com/doc/DR3pUVnZXR0RrZnVa" target="_blank">修改宝宝仓库页数</a></li>
+			<li><a href="https://docs.qq.com/doc/DR0Zna1NxZHZmaE9x" target="_blank">如何修改屏幕中间GM发出的公告</a></li>
+			<li><a href="https://docs.qq.com/doc/DR1VxTUdTZ2JqTVZz" target="_blank">怎样才能知道所有物品的ID和数据</a></li>
+			<li><a href="https://docs.qq.com/doc/DR3FQVHhDSHJPdnZS" target="_blank">快速结商业方法</a></li>
+			<li><a href="https://docs.qq.com/doc/DR2V2bWJTYmFYcGNM" target="_blank">修改合BB速度</a></li>
+			<li><a href="https://docs.qq.com/doc/DR3ZPcWpnc3FrZ1BY" target="_blank">技能属性修改</a></li>
+			<li><a href="https://docs.qq.com/doc/DR05MR1dIWkhRUVVI" target="_blank">幻兽合一次加的评分修改</a></li>
+			<li><a href="https://docs.qq.com/doc/DR2F6ZnFBVU9BWmZS" target="_blank">怎么给随机卷叠加到5000个</a></li>
+			<!-- <li><a href="###" target="_blank">标题标题标题</a></li> -->
+			
+        </ul>
     </div>
 </body>
 </html>

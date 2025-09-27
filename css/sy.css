@@ -39,11 +39,13 @@ img {
 	margin:0 auto;
 }
 #q {
-	width:960px;
+	/* width:960px; */
+	width:1200px;
 	margin:0 auto;
 }
 #qa {
-	width:982px;
+	/* width:982px; */
+	width:1200px;
 	margin:0 auto;
 	padding:0 1px;
 	background:#34679b;
@@ -51,7 +53,8 @@ img {
 	border-right:1px solid #376da4;
 }
 #qb {
-	width:980px;
+	/* width:980px; */
+	width:1200px;
 	border-left:1px solid #305e8d;
 	border-right:1px solid #305e8d;
 	background:url("../images/nb.gif")/*tpa=http://513my.com/img/nb.gif*/ no-repeat bottom right;
@@ -369,7 +372,8 @@ img {
 	border-top:none;
 }
 #gb {
-	width:958px;
+	/* width:958px; */
+	width:1198px;
 	background:#f5f5f5;
 	border:1px solid #ddd;
 	border-top:none;

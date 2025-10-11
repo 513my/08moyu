@@ -7,7 +7,7 @@ body{
 	color:#555;
 	font-size:18px;
 	background-color:#3970a9;
-	behavior:url("../images/csshover.htc")/*tpa=http://513my.com/img/img/js/csshover.htc*/;
+	behavior:url("../images/csshover.htc")/*tpa=img/img/js/csshover.htc*/;
 }
 a {
 	color:#555;
@@ -57,7 +57,7 @@ img {
 	width:1200px;
 	border-left:1px solid #305e8d;
 	border-right:1px solid #305e8d;
-	background:url("../images/nb.gif")/*tpa=http://513my.com/img/nb.gif*/ no-repeat bottom right;
+	background:url("../images/nb.gif")/*tpa=img/nb.gif*/ no-repeat bottom right;
 	background-color:#fff;
 }
 #blank {
@@ -84,23 +84,23 @@ img {
 }
 #top a.ts {
 	padding-left:23px;
-	background:url("../images/ts.gif")/*tpa=http://513my.com/img/ts.gif*/ no-repeat left;
+	background:url("../images/ts.gif")/*tpa=img/ts.gif*/ no-repeat left;
 }
 #top a.tw {
 	padding-left:20px;
-	background:url("../images/tw.gif")/*tpa=http://513my.com/img/tw.gif*/ no-repeat left;
+	background:url("../images/tw.gif")/*tpa=img/tw.gif*/ no-repeat left;
 }
 #top a.tx {
 	padding-left:23px;
-	background:url("../images/tx.gif")/*tpa=http://513my.com/img/tx.gif*/ no-repeat left;
+	background:url("../images/tx.gif")/*tpa=img/tx.gif*/ no-repeat left;
 }
 #top a.tb {
 	padding-left:20px;
-	background:url("../images/tb.gif")/*tpa=http://513my.com/img/tb.gif*/ no-repeat left;
+	background:url("../images/tb.gif")/*tpa=img/tb.gif*/ no-repeat left;
 }
 #top a.tz {
 	padding-left:19px;
-	background:url("../images/tz.gif")/*tpa=http://513my.com/img/tz.gif*/ no-repeat left;
+	background:url("../images/tz.gif")/*tpa=img/tz.gif*/ no-repeat left;
 }
 #top span {
 	float:right;
@@ -208,7 +208,7 @@ img {
 	height:26px;
 	line-height:26px;
 	padding-left:28px;
-	background:url("../images/gt.gif")/*tpa=http://513my.com/img/gt.gif*/ no-repeat 8px 4px;
+	background:url("../images/gt.gif")/*tpa=img/gt.gif*/ no-repeat 8px 4px;
 	overflow:hidden;
 	white-space:nowrap;
 	-o-text-overflow:ellipsis;
@@ -249,11 +249,11 @@ img {
 }
 #focus .pre {
 	left:0;
-	background:url("../images/sl.png")/*tpa=http://513my.com/img/sl.png*/ no-repeat left center;
+	background:url("../images/sl.png")/*tpa=img/sl.png*/ no-repeat left center;
 }
 #focus .next {
 	right:0;
-	background:url("../images/sr.png")/*tpa=http://513my.com/img/sr.png*/ no-repeat right center;
+	background:url("../images/sr.png")/*tpa=img/sr.png*/ no-repeat right center;
 }
 #ads img {
 	float:left;
@@ -269,7 +269,7 @@ img {
 /* 表格 */
 #bg {
 	font-size:12px;
-	background:url("../images/bg.gif")/*tpa=http://513my.com/img/bg.gif*/ no-repeat right bottom;
+	background:url("../images/bg.gif")/*tpa=img/bg.gif*/ no-repeat right bottom;
 }
 #bg table tr {
 }
@@ -287,7 +287,7 @@ img {
 	height:45px;
 	line-height:45px;
 	text-align:center;
-	background:url("../images/bt.gif")/*tpa=http://513my.com/img/bt.gif*/ repeat-x left bottom;
+	background:url("../images/bt.gif")/*tpa=img/bt.gif*/ repeat-x left bottom;
 	border-right:1px solid #888;
 	border-bottom:2px solid #888;
 }
@@ -422,7 +422,7 @@ img {
 	height:220px;
 	padding-top:12px;
 	border-left:1px solid #ddd;
-	background:url("../images/g.jpg")/*tpa=http://513my.com/img/g.jpg*/ no-repeat;
+	background:url("../images/g.jpg")/*tpa=img/g.jpg*/ no-repeat;
 }
 #ge li {
 	float:left;
@@ -431,7 +431,7 @@ img {
 	height:26px;
 	line-height:26px;
 	padding-left:32px;
-	background:url("../images/gt.gif")/*tpa=http://513my.com/img/gt.gif*/ no-repeat 10px 4px;
+	background:url("../images/gt.gif")/*tpa=img/gt.gif*/ no-repeat 10px 4px;
 	overflow:hidden;
 	white-space:nowrap;
 	-o-text-overflow:ellipsis;
@@ -623,7 +623,7 @@ img {
 	width:151px;
 	line-height:25px;
 	padding:5px 8px;
-	background:url("../images/o.gif")/*tpa=http://513my.com/img/o.gif*/ no-repeat right bottom;
+	background:url("../images/o.gif")/*tpa=img/o.gif*/ no-repeat right bottom;
 	border:1px solid #000;
 }
 /* Index(黄) */
@@ -709,7 +709,7 @@ img {
 	height:216px;
 	line-height:25px;
 	padding:15px 0 0 15px;
-	background:url("../images/y.gif")/*tpa=http://513my.com/img/y.gif*/ no-repeat right bottom;
+	background:url("../images/y.gif")/*tpa=img/y.gif*/ no-repeat right bottom;
 	background-color:#f5f5f5;
 	border:1px solid #333;
 }
@@ -787,7 +787,7 @@ img {
 	width:151px;
 	line-height:25px;
 	padding:5px 8px;
-	background:url("../images/y.gif")/*tpa=http://513my.com/img/y.gif*/ no-repeat left bottom;
+	background:url("../images/y.gif")/*tpa=img/y.gif*/ no-repeat left bottom;
 	border:1px solid #000;
 }
 /* 友情链接 */
@@ -848,7 +848,7 @@ img {
 	text-align:center;
 	border-top:1px solid #ddd;
 	background-color:#eee;
-	background:url("../images/foot.gif")/*tpa=http://513my.com/img/foot.gif*/ no-repeat right bottom;
+	background:url("../images/foot.gif")/*tpa=img/foot.gif*/ no-repeat right bottom;
 }
 #foot a {
 	color:#999;
@@ -973,7 +973,7 @@ img {
 	padding:5px 15px 5px 38px;
 	border:1px solid #ddd;
 	border-top:none;
-	background:url("../images/n.gif")/*tpa=http://513my.com/img/n.gif*/ no-repeat 15px 16px;
+	background:url("../images/n.gif")/*tpa=img/n.gif*/ no-repeat 15px 16px;
 	background-color:#f5f5f5;
 }
 #rb ul li:hover {
@@ -1177,17 +1177,17 @@ img {
 .ui-dialog { position: relative; padding: 0 0 2px 0; width: 300px; border:#3970a9 solid 5px; left:50% !important; margin-left:-400px;}
 .ui-dialog .ui-dialog-titlebar { height: 38px; position: relative; background: #3970a9;}
 .ui-dialog .ui-dialog-titlebar-close { position: absolute; right: 1px; top: 3px; width: 42px; height: 30px; }
-.ui-dialog .ui-dialog-titlebar-close span { display: block; width: 100%; height: 100%; background: url("../images/close.gif")/*tpa=http://513my.com/img/close.gif*/; cursor: pointer; }
+.ui-dialog .ui-dialog-titlebar-close span { display: block; width: 100%; height: 100%; background: url("../images/close.gif")/*tpa=img/close.gif*/; cursor: pointer; }
 .ui-dialog .ui-dialog-titlebar-zoom { position: absolute; right: 50px; top: 3px; width: 65px; height: 30px; }
-.ui-dialog .ui-dialog-titlebar-zoom span { display: block; width: 100%; height: 100%; background: url("../images/look.gif")/*tpa=http://513my.com/img/look.gif*/; cursor: pointer; }
+.ui-dialog .ui-dialog-titlebar-zoom span { display: block; width: 100%; height: 100%; background: url("../images/look.gif")/*tpa=img/look.gif*/; cursor: pointer; }
 .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; }
-.ui-dialog .ui-dialog-content { border: 0; padding: 2px; background: url("../images/loading.gif")/*tpa=http://513my.com/img/loading.gif*/ 8px 2px no-repeat; overflow: auto; zoom: 1; overflow: hidden; }
+.ui-dialog .ui-dialog-content { border: 0; padding: 2px; background: url("../images/loading.gif")/*tpa=img/loading.gif*/ 8px 2px no-repeat; overflow: auto; zoom: 1; overflow: hidden; }
 .ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
 .ui-dialog .ui-dialog-buttonpane button { float: right; margin: .5em .4em .5em 0; cursor: pointer; padding: .2em .6em .3em .6em; line-height: 1.4em; width:auto; overflow:visible; }
 .ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
 .ui-draggable .ui-dialog-titlebar { cursor: move; }
-.ui-dialog-alt { position: absolute; width: 23px; height: 26px; background: url("../images/icon.gif")/*tpa=http://513my.com/img/icon.gif*/ no-repeat; right: -23px; top: 11px; opacity: .70;filter:Alpha(Opacity=70); cursor: pointer;}
-.ui-dialog-alt.hover { background: url("../images/zoom_icon_hover.gif")/*tpa=http://513my.com/images/zoom_icon_hover.gif*/ no-repeat; opacity: .70;filter:Alpha(Opacity=70); }
+.ui-dialog-alt { position: absolute; width: 23px; height: 26px; background: url("../images/icon.gif")/*tpa=img/icon.gif*/ no-repeat; right: -23px; top: 11px; opacity: .70;filter:Alpha(Opacity=70); cursor: pointer;}
+.ui-dialog-alt.hover { background: url("../images/zoom_icon_hover.gif")/*tpa=images/zoom_icon_hover.gif*/ no-repeat; opacity: .70;filter:Alpha(Opacity=70); }
 .ui-dialog-border { display: inline-block; position: relative; width: auto; height: auto; }
 
 /* 来自yahoo,让标题都自定义,适应多个系统应用 */

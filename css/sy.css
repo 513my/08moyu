@@ -293,16 +293,16 @@ img {
 }
 #be tbody td {
 	height:40px;
-	line-height:10px;
+	line-height:15px;
 	border-right:1px solid #888;
 	border-bottom:1px solid #888;
 }
 #bk td {
-	color:#318912;
+	color:#9C27B0;
 	text-align:center;
 }
 #bk a {
-	color:#318912;
+	color:#4100ff;
 }
 #bt td {
 	color:#f00;

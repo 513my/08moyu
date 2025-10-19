@@ -4,72 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>老端引擎下载|513my.Cοм</title>
-    <script src="css/msg.cdntailwind.css"></script>
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#165DFF',
-                        dark: '#1D2939'
-                    }
-                }
+    <style>
+        :root {
+            --primary: #165DFF;
+            --secondary: #36BFFA;
+            --dark: #1D2939;
+            --gray-50: #F9FAFB;
+            --gray-600: #4B5563;
+            --white: #FFFFFF;
+            --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --card-gap: 2rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #19242fab;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+            flex-grow: 1;
+        }
+
+        .main-title {
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 0.25rem;
+            color: #111827;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--card-gap);
+            margin-bottom: 3rem;
+            margin-top: 1rem;
+            justify-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .card-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
-    </script>
+
+        @media (min-width: 1500px) {
+            .card-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .card-link {
+            display: block;
+            text-decoration: none;
+            width: 100%;
+            max-width: 480px;
+        }
+
+        .card {
+            background-color: var(--white);
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: box-shadow 0.3s ease;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-link:hover .card {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .card-img-wrapper {
+            position: relative;
+            flex: 0 0 300px;
+            overflow: hidden;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card-link:hover .card-img {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 1rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #111827;
+            transition: color 0.3s ease;
+        }
+
+        .card-link:hover .card-title {
+            color: var(--primary);
+        }
+
+        .card-desc {
+            color: var(--gray-600);
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            line-height: 1.4;
+            flex: 1;
+        }
+
+        /* 已删除"其他补丁列表"相关样式（list-title、patch-list、list-item等） */
+    </style>
 </head>
-<body class="min-h-screen flex flex-col bg-cover bg-center bg-fixed" style="background-image: url('img/msg.png');">
-    <div class="flex-grow">
-        <div class="container mx-auto px-4 py-16">
-            <!-- 卡片容器 -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto mb-20 px-2">
-                <!-- 文章卡片1 -->
-                <a href="msg1.html" target="_blank" class="block group">
-                    <article class="bg-white/70 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 w-full">
-                        <!-- 图片区域 -->
-                        <div class="relative h-64 overflow-hidden w-full">
-                            <img src="img/msg3709.png" alt="单区" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
-                        </div>
-                        <!-- 标题区域 - 白色背景 -->
-                        <div class="py-2 text-center bg-white">
-                            <h3 class="text-2xl font-bold group-hover:text-primary transition-colors duration-300 text-dark">
-                                单机单区139汉化引擎完整版
-                            </h3>
-                        </div>
-                    </article>
-                </a>
-                
-                <!-- 文章卡片2 -->
-                <a href="msg9.html" target="_blank" class="block group">
-                    <article class="bg-white/70 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 w-full">
-                        <div class="relative h-64 overflow-hidden w-full">
-                            <img src="img/msg3709-9.png" alt="多区" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
-                        </div>
-                        <div class="py-2 text-center bg-white">
-                            <h3 class="text-2xl font-bold group-hover:text-primary transition-colors duration-300 text-dark">
-                                1机9区引擎完整版
-                            </h3>
-                        </div>
-                    </article>
-                </a>
-                
-                <!-- 文章卡片3 -->
-                <a href="http://xz.398my.cn/398tool/398my老端-服务端全套(密码：123).zip" target="_blank" class="block group">
-                    <article class="bg-white/70 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 w-full">
-                        <div class="relative h-64 overflow-hidden w-full">
-                            <img src="img/msg3709-30.png" alt="多区" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
-                        </div>
-                        <div class="py-2 text-center bg-white">
-                            <h3 class="text-2xl font-bold group-hover:text-primary transition-colors duration-300 text-dark">
-                                1机30区引擎完整版
-                            </h3>
-                        </div>
-                    </article>
-                </a>
-            </div>
-        </div>
+<body>
+    <div class="container">
+        <div class="card-grid">
+            <!-- 文章卡片1 -->
+            <a href="msg1.html" target="_blank" class="card-link">
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/msg3709.png" alt="单区图片" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">单机单区139汉化引擎完整版</h3>
+                        <p class="card-desc">139汉化引擎</p>
+                    </div>
+                </article>
+            </a>
+            <!-- 文章卡片2 -->
+            <a href="msg9.html" target="_blank" class="card-link">
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/msg3709-9.png" alt="多区图片" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">1机9区引擎完整版</h3>
+                        <p class="card-desc">喜欢就下载，不喜欢就不用下载。</p>
+                    </div>
+                </article>
+            </a>
+            <!-- 文章卡片3 -->
+            <a href="http://xz.398my.cn/398tool/398my老端-服务端全套(密码：123).zip" target="_blank" class="card-link">
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/msg3709-30.png" alt="398图片" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">1机30区引擎完整版</h3>
+                        <p class="card-desc">1机30区引擎完整版</p>
+                    </div>
+                </article>
+            </a>
+
     </div>
-	
 </body>
 </html>

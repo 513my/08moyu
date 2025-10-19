@@ -3,211 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>老端补丁专区-魔域版本库-513my.Cοм</title>
-    <script src="css/cdntailwind.css"></script>
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    
-    <!-- 配置Tailwind自定义颜色 -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#165DFF',
-                        secondary: '#36BFFA',
-                        amber: {
-                            500: '#F59E0B'
-                        },
-                        dark: '#1D2939'
-                    }
-                }
+    <title>老端补丁专区-魔域版本库-513my.Cοm</title>
+    <style>
+        :root {
+            --primary: #165DFF;
+            --secondary: #36BFFA;
+            --dark: #1D2939;
+            --gray-50: #F9FAFB;
+            --gray-600: #4B5563;
+            --white: #FFFFFF;
+            --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --card-gap: 2rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--gray-50);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+            flex-grow: 1;
+        }
+
+        .main-title {
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 0.25rem;
+            color: #111827;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--card-gap);
+            margin-bottom: 3rem;
+            margin-top: 1rem;
+            justify-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .card-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
-    </script>
-</head>
-<body class="bg-gray-50 min-h-screen flex flex-col">
-    <div class="flex-grow">
-        <div class="container mx-auto px-4 py-16">点击就下载，无需注册
-            <!-- 相关文章标题 -->
-            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-center mb-1">老端补丁</h2>
-   <!-- 文章卡片网格 -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-     <!-- 文章卡片 -->
-   <a href="https://docs.qq.com/doc/DR0NNbVBTdmdNRk9t" target="_blank" class="block group">
-     <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 h-full">
-     <div class="relative h-72 overflow-hidden">
-     <img src="img/buding.png" alt="补丁图片" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
-     </div>
-     <div class="p-6">
-      <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
-	老端修复补丁完整版(2025-9-30更新)</h3>
-       <p class="text-gray-600 line-clamp-3">修复:黑屏.白屏.花屏.看不见人物.传送地图卡死.去广告</p>
-      </div>
-      </article>
-    </a>
-     <!-- 文章卡片 -->
-   <a href="https://docs.qq.com/doc/DR2ZRcUpxVXZDV09P" target="_blank" class="block group">
-     <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 h-full">
-     <div class="relative h-72 overflow-hidden">
-     <img src="img/sgt.png" alt="补丁图片" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
-     </div>
-     <div class="p-6">
-      <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
-	雷鸣门口水果摊补丁</h3>
-       <p class="text-gray-600 line-clamp-3">喜欢就下载，不喜欢就不用下载。</p>
-      </div>
-      </article>
-    </a>
-     <!-- 文章卡片 -->
-   <a href="https://docs.qq.com/doc/DR0NBRkhaaFZuam93" target="_blank" class="block group">
-     <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 h-full">
-     <div class="relative h-72 overflow-hidden">
-     <img src="img/kuanping.jpg" alt="补丁图片" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
-     </div>
-     <div class="p-6">
-      <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
-	老端宽屏补丁,大屏补丁</h3>
-       <p class="text-gray-600 line-clamp-3">有两种，一种有广告，一种无广告</p>
-      </div>
-      </article>
-    </a>
-     <!-- 文章卡片 -->
-   <a href="https://share.feijipan.com/s/4APWykcO" target="_blank" class="block group">
-     <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 h-full">
-     <div class="relative h-72 overflow-hidden">
-     <img src="img/flash.png" alt="补丁图片" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
-     </div>
-     <div class="p-6">
-      <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
-老端修复解决flash问题</h3>
-       <p class="text-gray-600 line-clamp-3">提示AdobeFlash Player错误</p>
-      </div>
-      </article>
-    </a>
-     <!-- 文章卡片 -->
-   <a href="https://docs.qq.com/doc/DR3d5RUFobFNVaFhD" target="_blank" class="block group">
-     <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 h-full">
-     <div class="relative h-72 overflow-hidden">
-     <img src="img/xuetiao.png" alt="补丁图片" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
-     </div>
-     <div class="p-6">
-      <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
-修复电脑不显示血条补丁</h3>
-       <p class="text-gray-600 line-clamp-3">有的新电脑可能出现不显示血条的情况</p>
-      </div>
-      </article>
-    </a>
-	
-     <!-- 文章卡片 -->
-   <a href="img/lunzi.png" target="_blank" class="block group">
-     <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 h-full">
-     <div class="relative h-72 overflow-hidden">
-     <img src="img/lunzi.png" alt="补丁图片" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
-     </div>
-     <div class="p-6">
-      <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
-异能者轮子武器</h3>
-       <p class="text-gray-600 line-clamp-3">怀旧轮子 转啊转</p>
-      </div>
-      </article>
-    </a>	
-	
-     <!-- 文章卡片 -->
-<!--    <a href="###" target="_blank" class="block group">
-     <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 h-full">
-     <div class="relative h-72 overflow-hidden">
-     <img src="img/图片.png" alt="补丁图片" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
-     </div>
-     <div class="p-6">
-      <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
-文章标题</h3>
-       <p class="text-gray-600 line-clamp-3">提示语</p>
-      </div>
-      </article>
-    </a> -->	
-	
-     <!-- 文章卡片 -->
-<!--    <a href="###" target="_blank" class="block group">
-     <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 h-full">
-     <div class="relative h-72 overflow-hidden">
-     <img src="img/图片.png" alt="补丁图片" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
-     </div>
-     <div class="p-6">
-      <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
-文章标题</h3>
-       <p class="text-gray-600 line-clamp-3">提示语</p>
-      </div>
-      </article>
-    </a> -->	
 
-            </div>
-<!-- ========================================================================== -->
-            <div class="mb-16 max-w-md">
-                <h3 class="text-xl font-semibold mb-6">其他补丁列表</h3>
-                <div class="space-y-3 min-w-max">
-                    <div class="flex items-center py-3 px-6 bg-gray-50 rounded-lg">
-                        <span class="text-lg font-medium text-dark mr-4 whitespace-nowrap">139引擎专用DLL+修复补丁完整版</span>
-                        <div class="flex gap-2 shrink-0">
-                            <a href="https://share.feijipan.com/s/dSPWvZkt" target="_blank" class="px-3 py-1 bg-primary text-white text-sm rounded hover:bg-primary/90 transition-colors">下载地址①</a>
-                            <a href="https://www.123865.com/s/PlU0Vv-5TXWv" target="_blank" class="px-3 py-1 bg-secondary text-white text-sm rounded hover:bg-secondary/90 transition-colors">下载地址②</a>
-                        </div>
+        @media (min-width: 1500px) {
+            .card-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .card-link {
+            display: block;
+            text-decoration: none;
+            width: 100%;
+            max-width: 480px;
+        }
+
+        .card {
+            background-color: var(--white);
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: box-shadow 0.3s ease;
+            width: 100%;
+            /* 卡片总高度改为自适应（图片300px + 内容高度） */
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-link:hover .card {
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* 核心修改：图片容器高度改为300px */
+        .card-img-wrapper {
+            position: relative;
+            flex: 0 0 300px; /* 图片高度固定为300px */
+            overflow: hidden;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card-link:hover .card-img {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 1rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #111827;
+            transition: color 0.3s ease;
+        }
+
+        .card-link:hover .card-title {
+            color: var(--primary);
+        }
+
+        .card-desc {
+            color: var(--gray-600);
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            line-height: 1.4;
+            flex: 1;
+        }
+
+        /* 其他补丁列表样式保持不变 */
+        .list-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #111827;
+        }
+
+        .patch-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            min-width: max-content;
+            margin-bottom: 4rem;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--gray-50);
+            border-radius: 0.5rem;
+            gap: 1rem;
+        }
+
+        .list-text {
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: var(--dark);
+            white-space: nowrap;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 0.5rem;
+            flex-shrink: 0;
+        }
+
+        .btn-primary {
+            padding: 0.25rem 0.75rem;
+            background-color: var(--primary);
+            color: var(--white);
+            font-size: 0.875rem;
+            border-radius: 0.25rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: rgba(22, 93, 255, 0.9);
+        }
+
+        .btn-secondary {
+            padding: 0.25rem 0.75rem;
+            background-color: var(--secondary);
+            color: var(--white);
+            font-size: 0.875rem;
+            border-radius: 0.25rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(54, 191, 250, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        点击就下载，无需注册
+        <h2 class="main-title">老端补丁</h2>
+        <div class="card-grid">
+            <!-- 文章卡片1 -->
+            <a href="https://docs.qq.com/doc/DR0NNbVBTdmdNRk9t" target="_blank" class="card-link">
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/buding.png" alt="补丁图片" class="card-img">
                     </div>
-                    
-<div class="flex items-center py-3 px-6 bg-gray-50 rounded-lg">
-  <span class="text-lg font-medium text-dark mr-4 whitespace-nowrap">老端boss地图补丁</span>
-   <div class="flex gap-2 shrink-0">
-<a href="https://share.feijipan.com/s/W7M2Q8n8" target="_blank" class="px-3 py-1 bg-primary text-white text-sm rounded hover:bg-primary/90 transition-colors">下载地址①</a>
-<a href="https://www.123865.com/s/PlU0Vv-smPWv" target="_blank" class="px-3 py-1 bg-secondary text-white text-sm rounded hover:bg-secondary/90 transition-colors">下载地址②</a>
-   </div>
-    </div>
-                    
-<div class="flex items-center py-3 px-6 bg-gray-50 rounded-lg">
-  <span class="text-lg font-medium text-dark mr-4 whitespace-nowrap">老端选区界面[动态背景]补丁</span>
-   <div class="flex gap-2 shrink-0">
-<a href="https://docs.qq.com/doc/DR2h5eW1abVpGdFFP" target="_blank" class="px-3 py-1 bg-primary text-white text-sm rounded hover:bg-primary/90 transition-colors">下载地址①</a>
-<a href="https://docs.qq.com/doc/DR2h5eW1abVpGdFFP" target="_blank" class="px-3 py-1 bg-secondary text-white text-sm rounded hover:bg-secondary/90 transition-colors">下载地址②</a>
-   </div>
-    </div>
-                    
-<!-- <div class="flex items-center py-3 px-6 bg-gray-50 rounded-lg">
-  <span class="text-lg font-medium text-dark mr-4 whitespace-nowrap">文章标题</span>
-   <div class="flex gap-2 shrink-0">
-<a href="#" target="_blank" class="px-3 py-1 bg-primary text-white text-sm rounded hover:bg-primary/90 transition-colors">下载地址①</a>
-<a href="#" target="_blank" class="px-3 py-1 bg-secondary text-white text-sm rounded hover:bg-secondary/90 transition-colors">下载地址②</a>
-   </div>
-    </div> -->
-                              
+                    <div class="card-content">
+                        <h3 class="card-title">老端修复补丁完整版(2025-9-30更新)</h3>
+                        <p class="card-desc">修复:黑屏.白屏.花屏.看不见人物.传送地图卡死.去广告</p>
+                    </div>
+                </article>
+            </a>
+            <!-- 文章卡片2 -->
+            <a href="https://docs.qq.com/doc/DR2ZRcUpxVXZDV09P" target="_blank" class="card-link">
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/sgt.png" alt="补丁图片" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">雷鸣门口水果摊补丁</h3>
+                        <p class="card-desc">喜欢就下载，不喜欢就不用下载。</p>
+                    </div>
+                </article>
+            </a>
+            <!-- 文章卡片3 -->
+            <a href="https://docs.qq.com/doc/DR0NBRkhaaFZuam93" target="_blank" class="card-link">
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/kuanping.jpg" alt="补丁图片" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">老端宽屏补丁,大屏补丁</h3>
+                        <p class="card-desc">有两种，一种有广告，一种无广告</p>
+                    </div>
+                </article>
+            </a>
+            <!-- 文章卡片4 -->
+            <a href="https://share.feijipan.com/s/4APWykcO" target="_blank" class="card-link">
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/flash.png" alt="补丁图片" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">老端修复解决flash问题</h3>
+                        <p class="card-desc">提示AdobeFlash Player错误</p>
+                    </div>
+                </article>
+            </a>
+            <!-- 文章卡片5 -->
+            <a href="https://docs.qq.com/doc/DR3d5RUFobFNVaFhD" target="_blank" class="card-link">
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/xuetiao.png" alt="补丁图片" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">修复电脑不显示血条补丁</h3>
+                        <p class="card-desc">有的新电脑可能出现不显示血条的情况</p>
+                    </div>
+                </article>
+            </a>
+            <!-- 文章卡片6 -->
+            <a href="img/lunzi.png" target="_blank" class="card-link">
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/lunzi.png" alt="补丁图片" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">异能者轮子武器</h3>
+                        <p class="card-desc">怀旧轮子 转啊转</p>
+                    </div>
+                </article>
+            </a>
+        </div>
+
+        <div>
+            <h3 class="list-title">其他补丁列表</h3>
+            <div class="patch-list">
+                <div class="list-item">
+                    <span class="list-text">139引擎专用DLL+修复补丁完整版</span>
+                    <div class="btn-group">
+                        <a href="https://share.feijipan.com/s/dSPWvZkt" target="_blank" class="btn-primary">下载地址①</a>
+                        <a href="https://www.123865.com/s/PlU0Vv-5TXWv" target="_blank" class="btn-secondary">下载地址②</a>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <span class="list-text">老端boss地图补丁</span>
+                    <div class="btn-group">
+                        <a href="https://share.feijipan.com/s/W7M2Q8n8" target="_blank" class="btn-primary">下载地址①</a>
+                        <a href="https://www.123865.com/s/PlU0Vv-smPWv" target="_blank" class="btn-secondary">下载地址②</a>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <span class="list-text">老端选区界面[动态背景]补丁</span>
+                    <div class="btn-group">
+                        <a href="https://docs.qq.com/doc/DR2h5eW1abVpGdFFP" target="_blank" class="btn-primary">下载地址①</a>
+                        <a href="https://docs.qq.com/doc/DR2h5eW1abVpGdFFP" target="_blank" class="btn-secondary">下载地址②</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    <!-- 页脚 -->
-<!--     <footer class="bg-dark text-white py-8">
-<div class="container mx-auto px-4">
-<div class="flex flex-col md:flex-row justify-between items-center">
-<div class="mb-4 md:mb-0">
-    <p class="text-gray-400 text-sm">&copy; 2025 探索与研究. 保留所有权利.</p>
-    </div>
-<div class="flex space-x-6">
-<a href="#" class="text-gray-400 hover:text-white transition-colors">
-<i class="fa fa-facebook"></i></a>
-<a href="#" class="text-gray-400 hover:text-white transition-colors">
-<i class="fa fa-twitter"></i></a>
-<a href="#" class="text-gray-400 hover:text-white transition-colors">
-<i class="fa fa-instagram"></i></a>
-<a href="#" class="text-gray-400 hover:text-white transition-colors">
-<i class="fa fa-youtube-play"></i></a>
-   </div>
-<div class="mt-4 md:mt-0">
-<ul class="flex space-x-6 text-sm">
-<li><a href="#" class="text-gray-400 hover:text-white transition-colors">关于我们</a></li>
-<li><a href="#" class="text-gray-400 hover:text-white transition-colors">隐私政策</a></li>
-<li><a href="#" class="text-gray-400 hover:text-white transition-colors">联系我们</a></li>
-  </ul>
-   </div>
-    </div>
-     </div>
-    </footer> -->
 </body>
 </html>
